@@ -4,31 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 KZ 01 - xiaohe
+- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vless
-  server: kz3.zuoai.cf
+  server: 172.105.169.70
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
+  servername: 172.105.169.70
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 KZ 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 KZ 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
