@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - xiaohe
+- name: 🇸🇦 SA 01 - xiaohe
   type: vless
-  server: 195.85.23.217
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -18,9 +18,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 02 - xiaohe
+- name: 🇸🇦 SA 02 - xiaohe
   type: vless
-  server: 195.85.23.75
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -32,9 +32,23 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - xiaohe
+- name: 🇸🇦 SA 03 - xiaohe
   type: vless
-  server: 195.85.23.88
+  server: 91.209.253.244
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 04 - xiaohe
+  type: vless
+  server: 91.209.253.42
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -46,9 +60,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 04 - xiaohe
+- name: 🇸🇦 SA 05 - xiaohe
   type: vless
-  server: 195.85.23.111
+  server: 91.209.253.250
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -60,9 +74,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - xiaohe
+- name: 🇸🇦 SA 06 - xiaohe
   type: vless
-  server: 195.85.23.219
+  server: 91.209.253.216
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -74,9 +88,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - xiaohe
+- name: 🇸🇦 SA 07 - xiaohe
   type: vless
-  server: 195.85.23.252
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -88,9 +102,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 07 - xiaohe
+- name: 🇸🇦 SA 08 - xiaohe
   type: vless
-  server: 195.85.23.248
+  server: 91.209.253.243
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -102,9 +116,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - xiaohe
+- name: 🇸🇦 SA 09 - xiaohe
   type: vless
-  server: 195.85.23.29
+  server: 91.209.253.229
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -116,9 +130,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 09 - xiaohe
+- name: 🇸🇦 SA 10 - xiaohe
   type: vless
-  server: 195.85.23.45
+  server: 91.209.253.119
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -130,9 +144,37 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 10 - xiaohe
+- name: 🇸🇦 SA 11 - xiaohe
   type: vless
-  server: 195.85.23.47
+  server: 91.209.253.243
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 12 - xiaohe
+  type: vless
+  server: 91.209.253.109
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 13 - xiaohe
+  type: vless
+  server: 91.209.253.25
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -149,30 +191,36 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - xiaohe
-  - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
-  - 🇨🇿 CZ 05 - xiaohe
-  - 🇨🇿 CZ 06 - xiaohe
-  - 🇨🇿 CZ 07 - xiaohe
-  - 🇨🇿 CZ 08 - xiaohe
-  - 🇨🇿 CZ 09 - xiaohe
-  - 🇨🇿 CZ 10 - xiaohe
+  - 🇸🇦 SA 01 - xiaohe
+  - 🇸🇦 SA 02 - xiaohe
+  - 🇸🇦 SA 03 - xiaohe
+  - 🇸🇦 SA 04 - xiaohe
+  - 🇸🇦 SA 05 - xiaohe
+  - 🇸🇦 SA 06 - xiaohe
+  - 🇸🇦 SA 07 - xiaohe
+  - 🇸🇦 SA 08 - xiaohe
+  - 🇸🇦 SA 09 - xiaohe
+  - 🇸🇦 SA 10 - xiaohe
+  - 🇸🇦 SA 11 - xiaohe
+  - 🇸🇦 SA 12 - xiaohe
+  - 🇸🇦 SA 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - xiaohe
-  - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
-  - 🇨🇿 CZ 05 - xiaohe
-  - 🇨🇿 CZ 06 - xiaohe
-  - 🇨🇿 CZ 07 - xiaohe
-  - 🇨🇿 CZ 08 - xiaohe
-  - 🇨🇿 CZ 09 - xiaohe
-  - 🇨🇿 CZ 10 - xiaohe
+  - 🇸🇦 SA 01 - xiaohe
+  - 🇸🇦 SA 02 - xiaohe
+  - 🇸🇦 SA 03 - xiaohe
+  - 🇸🇦 SA 04 - xiaohe
+  - 🇸🇦 SA 05 - xiaohe
+  - 🇸🇦 SA 06 - xiaohe
+  - 🇸🇦 SA 07 - xiaohe
+  - 🇸🇦 SA 08 - xiaohe
+  - 🇸🇦 SA 09 - xiaohe
+  - 🇸🇦 SA 10 - xiaohe
+  - 🇸🇦 SA 11 - xiaohe
+  - 🇸🇦 SA 12 - xiaohe
+  - 🇸🇦 SA 13 - xiaohe
 rules:
 - MATCH,PROXIES
