@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
+  type: vless
+  server: 45.202.247.152
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇭 TH 02 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -25,11 +39,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇭 TH 01 - xiaohe
+  - 🇹🇭 TH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 TH 01 - xiaohe
+  - 🇹🇭 TH 02 - xiaohe
 rules:
 - MATCH,PROXIES
