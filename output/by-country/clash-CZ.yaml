@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 195.85.23.248
+  server: 195.85.23.75
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -15,108 +15,10 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - xiaohe
-  type: vless
-  server: 172.67.203.158
-  port: 443
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇨🇿 CZ 03 - xiaohe
-  type: vless
-  server: 195.85.23.219
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 04 - xiaohe
-  type: vless
-  server: 195.85.23.45
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - xiaohe
-  type: vless
-  server: 195.85.23.88
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - xiaohe
-  type: vless
-  server: 195.85.23.217
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 07 - xiaohe
-  type: vless
-  server: 195.85.23.111
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - xiaohe
-  type: vless
-  server: 195.85.23.47
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 09 - xiaohe
   type: vless
   server: 195.85.23.29
   port: 443
@@ -127,12 +29,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 10 - xiaohe
+- name: 🇨🇿 CZ 03 - xiaohe
   type: vless
-  server: 195.85.23.75
+  server: 195.85.23.88
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -141,24 +43,24 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 11 - xiaohe
+- name: 🇨🇿 CZ 04 - xiaohe
   type: vless
-  server: 104.21.12.63
-  port: 8443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 195.85.23.248
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: index.arcane509.workers.dev
-- name: 🇨🇿 CZ 12 - xiaohe
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 05 - xiaohe
   type: vless
   server: 195.85.23.252
   port: 443
@@ -169,7 +71,7 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 proxy-groups:
@@ -182,13 +84,6 @@ proxy-groups:
   - 🇨🇿 CZ 03 - xiaohe
   - 🇨🇿 CZ 04 - xiaohe
   - 🇨🇿 CZ 05 - xiaohe
-  - 🇨🇿 CZ 06 - xiaohe
-  - 🇨🇿 CZ 07 - xiaohe
-  - 🇨🇿 CZ 08 - xiaohe
-  - 🇨🇿 CZ 09 - xiaohe
-  - 🇨🇿 CZ 10 - xiaohe
-  - 🇨🇿 CZ 11 - xiaohe
-  - 🇨🇿 CZ 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -199,12 +94,5 @@ proxy-groups:
   - 🇨🇿 CZ 03 - xiaohe
   - 🇨🇿 CZ 04 - xiaohe
   - 🇨🇿 CZ 05 - xiaohe
-  - 🇨🇿 CZ 06 - xiaohe
-  - 🇨🇿 CZ 07 - xiaohe
-  - 🇨🇿 CZ 08 - xiaohe
-  - 🇨🇿 CZ 09 - xiaohe
-  - 🇨🇿 CZ 10 - xiaohe
-  - 🇨🇿 CZ 11 - xiaohe
-  - 🇨🇿 CZ 12 - xiaohe
 rules:
 - MATCH,PROXIES
