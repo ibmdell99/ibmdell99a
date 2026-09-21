@@ -6,12 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 81.90.25.152
-  port: 34302
-  uuid: e9a7f2c2-51bd-4a81-de35-26b369e2585b
+  server: www.speedtest.net
+  port: 443
+  uuid: 7fc7f295-b80e-4235-bb17-61e3ddc0744a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/dirxIBhljtrTSM76Q?ed=2560
+    headers:
+      Host: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
