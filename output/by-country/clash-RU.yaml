@@ -5,38 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: ss
-  server: 62.109.12.234
-  port: 2055
-  cipher: chacha20-ietf-poly1305
-  password: WxYpOK1iPSJySbVNMMJDtw
+  type: vless
+  server: 63.141.128.22
+  port: 443
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 172.64.53.55
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+  port: 443
+  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /vl/wufVnq4Dk8cyJO59lQ3WBXW8SFN435GD
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 172.64.32.103
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /ws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
