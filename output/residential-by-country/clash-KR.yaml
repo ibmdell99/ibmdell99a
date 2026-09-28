@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: 144.31.243.120
-  port: 8443
+  server: 104.17.31.60
+  port: 443
   uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
   udp: true
   tls: true
