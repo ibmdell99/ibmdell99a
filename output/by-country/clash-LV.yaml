@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: latvia-3.kochvpn.pw
-  port: 443
-  uuid: 8de0e6f4-d365-fa64-d5ba-eed9ea513e06
+  server: check-host.net
+  port: 2053
+  uuid: 29b2a593-35ce-4865-97be-b7e1da2eb003
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: latvia-3.kochvpn.pw
+  servername: shop.asamping.ir
   network: ws
   ws-opts:
-    path: /stream/ws
+    path: /
     headers:
-      Host: latvia-3.kochvpn.pw
+      Host: shop.asamping.ir
 proxy-groups:
 - name: PROXIES
   type: select
