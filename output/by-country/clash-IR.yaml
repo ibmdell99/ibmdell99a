@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 NO 01 - xiaohe
+- name: 🇮🇷 IR 01 - xiaohe
   type: vless
-  server: 91.190.155.173
-  port: 2083
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: tunnell.hosting-96.ir
+  port: 443
+  uuid: 6ba68c69-e108-502d-7b1c-e806fbc3cccd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
+  servername: tunnell.hosting-96.ir
   network: ws
   ws-opts:
-    path: /
+    path: /minecraft
     headers:
-      Host: shephe.dpdns.org
+      Host: tunnell.hosting-96.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 NO 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 NO 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES
