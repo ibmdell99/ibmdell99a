@@ -20,6 +20,18 @@ proxies:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
+  server: 34.51.187.118
+  port: 443
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
   server: 34.51.240.236
   port: 443
   uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
@@ -37,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
 rules:
 - MATCH,PROXIES
