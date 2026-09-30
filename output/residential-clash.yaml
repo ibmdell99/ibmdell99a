@@ -18,17 +18,33 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe
+  type: vless
+  server: 141.101.120.231
+  port: 443
+  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nahan-fog-af01.dfghttr2012.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-fog-af01.dfghttr2012.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

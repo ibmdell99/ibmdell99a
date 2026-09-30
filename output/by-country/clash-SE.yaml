@@ -6,21 +6,21 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 103.71.22.26
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 144.31.243.120
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: shephe.dpdns.org
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 2.26.17.128
+  server: 103.71.22.26
   port: 443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
@@ -34,21 +34,7 @@ proxies:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 03 - xiaohe
   type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 04 - xiaohe
-  type: vless
-  server: 103.71.22.26
+  server: 2.26.17.128
   port: 443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
@@ -57,9 +43,23 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /
     headers:
       Host: shephe.dpdns.org
+- name: 🇸🇪 SE 04 - xiaohe
+  type: vless
+  server: 109.120.155.155
+  port: 444
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇸🇪 SE 05 - xiaohe
   type: vless
   server: 103.71.22.234
@@ -74,6 +74,20 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
+- name: 🇸🇪 SE 06 - xiaohe
+  type: vless
+  server: 103.71.22.26
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +98,7 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +109,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
 rules:
 - MATCH,PROXIES
