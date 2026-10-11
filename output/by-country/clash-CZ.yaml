@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 CZ 01 - xiaohe
+  type: vless
+  server: broad-truth-e988.258-217.workers.dev
+  port: 8880
+  uuid: 2f5c68d9-182f-4d8b-ab53-9358a04387b7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: broad-truth-e988.258-217.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 CZ 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 CZ 01 - xiaohe
+rules:
+- MATCH,PROXIES
