@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 CZ 01 - xiaohe
+  type: vless
+  server: 188.114.97.3
+  port: 8443
+  uuid: a6fd8b83-7926-4b4e-884b-14f64e578815
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dn044toytgxw7ya2rygfhrvpw6mbl.pabjienmi.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/w47aznWVyUF9g3ciQ6GVv?ed=2560
+    headers:
+      Host: dn044toytgxw7ya2rygfhrvpw6mbl.pabjienmi.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 CZ 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 CZ 01 - xiaohe
+rules:
+- MATCH,PROXIES
