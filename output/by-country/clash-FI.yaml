@@ -13,12 +13,19 @@ proxies:
   udp: true
 - name: 🇫🇮 FI 02 - xiaohe
   type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  server: 185.239.141.248
+  port: 8388
+  cipher: aes-256-gcm
+  password: j_Z9yWqItCz_9yhD5YVY4w
   udp: true
 - name: 🇫🇮 FI 03 - xiaohe
+  type: ss
+  server: feow.nomush.ir
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: K63q-WhHdJoC_AIxT6E4r_IIuGIb6CuV
+  udp: true
+- name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -26,6 +33,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇮 FI 05 - xiaohe
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +48,8 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
   - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 04 - xiaohe
+  - 🇫🇮 FI 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +58,7 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
   - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 04 - xiaohe
+  - 🇫🇮 FI 05 - xiaohe
 rules:
 - MATCH,PROXIES
