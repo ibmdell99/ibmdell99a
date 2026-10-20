@@ -6,12 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: site.teslamotor.site
@@ -22,13 +23,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
