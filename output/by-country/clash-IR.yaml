@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
-  type: ss
-  server: mojif.fusetea.ir
-  port: 2089
-  cipher: chacha20-ietf-poly1305
-  password: OCYghwX3MNcK2myvperXNaInKT-gmknf
-  udp: true
-- name: 🇮🇷 IR 02 - xiaohe
   type: vless
   server: 199.232.78.159
   port: 80
@@ -30,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
 rules:
 - MATCH,PROXIES
