@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
+  type: vless
+  server: 37.9.4.62
+  port: 443
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vP4XeQ-z8LYtkSz1SCAxRMAEPreaHspoXm2nt0okQVw
+  servername: 360.yandex.ru
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: ss
   server: 130.49.189.158
