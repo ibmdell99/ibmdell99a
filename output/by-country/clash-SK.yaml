@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - xiaohe
+- name: 🇸🇰 SK 01 - xiaohe
   type: vless
-  server: 185.86.147.211
+  server: 76574ct.nl8.h1clayd.click
   port: 443
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 185.86.147.211
-  network: ws
-  ws-opts:
-    path: /assets/chunk/AFaAJmUwqcwd
-    headers:
-      Host: 185.86.147.211
+  reality-opts:
+    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
+  servername: 76574ct.nl8.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - xiaohe
+  - 🇸🇰 SK 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - xiaohe
+  - 🇸🇰 SK 01 - xiaohe
 rules:
 - MATCH,PROXIES
