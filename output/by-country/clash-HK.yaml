@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.66.132.196
+  port: 443
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ave-qualifications-choices-populations.trycloudflare.com
   network: ws
   ws-opts:
-    path: /arki
+    path: /a8b8606819ef
     headers:
-      Host: ''
+      Host: ave-qualifications-choices-populations.trycloudflare.com
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   type: ss
   server: 213.176.92.148
